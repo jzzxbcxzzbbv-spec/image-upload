@@ -1,0 +1,72 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>رفع الصور</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>رفع الصور</h1>
+
+      <p class="desc">
+        ارفع صورتك واحصل على رابط مباشر فورًا
+      </p>
+
+      <label for="fileInput" class="upload-box">
+
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          hidden
+        >
+
+        <span id="fileName">
+          اختر صورة
+        </span>
+
+      </label>
+
+      <img id="preview" hidden>
+
+      <button id="uploadBtn">
+        رفع الصورة
+      </button>
+
+      <div id="status"></div>
+
+      <div class="result">
+
+        <input
+          type="text"
+          id="link"
+          readonly
+          placeholder="الرابط يظهر هنا..."
+        >
+
+        <button id="copyBtn">
+          نسخ
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+          </html>
